@@ -1,0 +1,36 @@
+
+#include <iostream> 
+using namespace std;
+int main(){
+    // Euclid alg
+    unsigned int a,b;
+    cout<<"Enter a:";
+    cin>>a;
+    cout<<"\nEnter b:";
+    cin>>b;
+    if(b<a)
+    b+=0;
+    else 
+    { unsigned int c=b;
+    b=a;
+    a=c;
+    }
+    // b is always smaller than a, cause I'm lazy.
+    int n[20];
+    n[0]=a;
+    n[1]=b;
+    n[2]=a;
+    for(int i=2;i<20;i++){
+        while(n[i]>=n[i-1]{
+            n[i]-=n[i-1];
+        
+        }
+        if(n[i]==0{
+            unsigned int nod=n[i-1];
+            break;
+        }
+    }
+    cout<<"\nNOD: "<<nod;
+    return 0;
+
+}
