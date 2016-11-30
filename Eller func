@@ -1,0 +1,22 @@
+#include <iostream> 
+#include <math.h>
+using namespace std;
+int main(){
+    // Eiller
+    cout<<"Enter number:";
+    unsigned int e;
+    unsigned int G=1;
+    unsigned int n=0; //counter
+    cin>>e;
+    for(int i=2;i<e;i++){
+            while(e%i){
+                e/=i;
+                n++;
+            }
+            G*=pow(i,n)-i;
+            n=0;
+    }
+    cout<<"\nEller func from "<<e<<" is: "<<G;
+    return 0;
+
+}
