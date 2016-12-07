@@ -20,12 +20,17 @@ int main(){
     n[0]=a;
     n[1]=b;
     n[2]=a;
-    for(int i=2;i<20;i++){
-        while(n[i]>=n[i-1]{
+    unsigned int buf=0,buff=0;
+    for(int i=2;i<20;i++) {
+        buff=n[i];
+        while(n[i]>=n[i-1]) {
             n[i]-=n[i-1];
-        
+            buf++;
         }
-        if(n[i]==0{
+        cout<<n[i]<<"="<<buff<<"-"<<buf<<"*"<<n[i-1]<<endl;
+        buf=0;
+        buff=0;
+        if(n[i]==0) { 
             unsigned int nod=n[i-1];
             break;
         }
