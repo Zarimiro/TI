@@ -1,9 +1,9 @@
-
+//Note:The template file will be copied to a new file. When you change the code of the template file you can create new file with this base code. 
 #include <iostream> 
 using namespace std;
 int main(){
     // Euclid alg
-    unsigned int a,b;
+    int a,b;
     cout<<"Enter a:";
     cin>>a;
     cout<<"\nEnter b:";
@@ -11,7 +11,7 @@ int main(){
     if(b<a)
     b+=0;
     else 
-    { unsigned int c=b;
+    { int c=b;
     b=a;
     a=c;
     }
@@ -20,7 +20,7 @@ int main(){
     n[0]=a;
     n[1]=b;
     n[2]=a;
-    unsigned int buf=0,buff=0;
+    int buf=0,buff=0;
     for(int i=2;i<20;i++) {
         buff=n[i];
         while(n[i]>=n[i-1]) {
@@ -34,6 +34,7 @@ int main(){
             unsigned int nod=n[i-1];
             break;
         }
+        n[i+1]=n[i-1];
     }
     cout<<"\nNOD: "<<nod;
     return 0;
